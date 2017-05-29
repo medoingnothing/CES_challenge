@@ -14,7 +14,7 @@ class Registration extends CI_Controller
 		$this->form_validation->set_rules('fav_color', 'Favorite color', 'required');
 		
 		if($this->form_validation->run() == false){
-			$this->load->view('registration.php');
+			$this->load->view('registration');
 		}
 		else{
 			$this->addUser();
