@@ -11,6 +11,10 @@ class RegistrationModel extends CI_Model{
 	public function register($name, $dob, $email, $fav_color){
 		
 		if(!empty($name) && !empty($fav_color)){
+		
+		//make sure date is in correct format
+		$dob = nice_date($dob, 'Y-m-d');
+			
 		$data = array(
 			'name' => $name,
 			'dob' => $dob,

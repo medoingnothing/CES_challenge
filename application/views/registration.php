@@ -58,7 +58,8 @@
 			
 			//when submitted via ajax 
 			//check to make sure no empty fields
-			$('#btn_ajax').click(function(){
+			$('#btn_ajax').click(function(event){
+				event.preventDefault();
 				var name = $('#name').val();
 				var dob = $('#dob').val();
 				var email = $('#email').val();
@@ -80,6 +81,7 @@
 					$.ajax({
 						type:'POST',
 						url:'Ajax/register',
+						async: false,
 						data:{name: name, dob:dob, email:email, fav_color:fav_color},
 						success:function(html){
 							window.location.href = 'Home/index';
@@ -87,7 +89,7 @@
 					});
 				}
 					
-				
+				return false;
 			});
 			
 			$('#registrationForm').validate();
