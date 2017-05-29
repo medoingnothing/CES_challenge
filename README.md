@@ -1,5 +1,5 @@
 # CES_challenge
-Page located in dir index.php/Registration
+Page located in directory index.php/Registration
 
 Form design came from https://www.sanwebe.com/2014/08/css-html-forms-designs
 
