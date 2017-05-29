@@ -84,7 +84,7 @@
 						async: false,
 						data:{name: name, dob:dob, email:email, fav_color:fav_color},
 						success:function(html){
-							window.location.href = '<?php echo site_url('Home/'); ?>';
+							window.location.href = '<?php echo site_url('Home/');?>';
 						}
 					});
 				}
