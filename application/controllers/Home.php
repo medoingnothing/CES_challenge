@@ -10,7 +10,7 @@ class Home extends CI_Controller{
 		if(!empty($this->session->userdata('name')) && !empty($this->session->userdata('dob')) && !empty($this->session->userdata('fav_color')))	
 			$this->load->view('home');
 		else
-			redirect('Registration/index');
+			redirect('Registration/');
 	}
 }
 
