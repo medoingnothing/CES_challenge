@@ -49,6 +49,7 @@
 							<section class="panel color1">
 								<div class="intro joined">
 									<h2 class="major">Your favorite color is <?php echo $this->session->userdata('fav_color');?></h2>
+									<a href="../Registration/">Back to Registration</a>
 								</div>
 								<div class="inner">
 									<ul class="grid-icons three connected">

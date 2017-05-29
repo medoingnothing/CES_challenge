@@ -80,11 +80,11 @@
 				else{
 					$.ajax({
 						type:'POST',
-						url:'Ajax/register',
+						url:'<?php echo site_url('Ajax/register');?>',
 						async: false,
 						data:{name: name, dob:dob, email:email, fav_color:fav_color},
 						success:function(html){
-							window.location.href = 'Home/index';
+							window.location.href = '<?php echo site_url('Home/'); ?>';
 						}
 					});
 				}

@@ -18,7 +18,7 @@ class Registration extends CI_Controller
 		}
 		else{
 			$this->addUser();
-			redirect('Home/index');
+			redirect('Home/');
 		}
 	}
 	/*
