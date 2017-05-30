@@ -304,6 +304,12 @@ switch (ENVIRONMENT)
 	}
 
 	define('VIEWPATH', $view_folder.DIRECTORY_SEPARATOR);
+	
+	//set a default timezone
+	if( ! ini_get('date.timezone') )
+	{
+		date_default_timezone_set('America/New_York');
+	}
 
 /*
  * --------------------------------------------------------------------
